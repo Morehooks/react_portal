@@ -1,6 +1,8 @@
-import * as d3 from 'd3';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import App from './App';
+import registerServiceWorker from './registerServiceWorker';
 
-
-
-d3.select("div#root") // <-- B 
-.text("Hello world!");
+ReactDOM.render(<App />, document.getElementById('root'));
+registerServiceWorker();
